@@ -1,0 +1,8 @@
+/.DS_Store
+/node_modules
+contest.acc.json
+requirements.txt
+config.json
+basic_testcases.json
+basic.js
+settings.json

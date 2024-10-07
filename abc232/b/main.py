@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 S = input()
-N = int(input())
-S = input().split()
-A, B, C = input().split()
-L = list(map(int, input().split()))
-H, N = map(int, input().split())
+T = input()
+
+st = set()
+
+for i in range(len(S)):
+    k = (ord(T[i]) - ord(S[i]) + 26) % 26
+    st.add(k)
+
+if len(st) == 1:
+    print("Yes")
+else:
+    print("No")

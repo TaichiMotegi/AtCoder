@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-S = input()
-N = int(input())
-S = input().split()
-A, B, C = input().split()
-L = list(map(int, input().split()))
-H, N = map(int, input().split())
+t = int(input())
+
+
+def calc(t):
+    return t**2 + 2 * t + 3
+
+
+print(calc(calc(calc(t) + t) + calc(calc(t))))
